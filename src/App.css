@@ -7,12 +7,13 @@
 }
 
 .Navbar {
-  background-color: #14213d;
+  background-color: #edede9;
   font-family: "Antonio", Sans-serif;
   color: #fff;
   padding: 20px 0;
   font-size: 1.2em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .paper-body {

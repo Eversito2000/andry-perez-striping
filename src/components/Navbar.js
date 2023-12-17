@@ -5,39 +5,57 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { Link } from 'react-scroll';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Josefin Sans',
+  },
+});
 const Navbar = () => {
   const Name = 'Andry Perez'
-  const emailAddress = 'aaastripingda@gmail.com'
-  const phoneNumber = '(305)-905-6654'
 
   return (
-    <Box sx={{ flexGrow: 1 }} >
-      <AppBar position="static">
-        <Toolbar className='Navbar'>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }} >
-            {Name}
-          </Typography>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'flex-end',
-              alignItems: 'center',
-              flexGrow: 1
-            }}
-          >
-            <Typography variant="h6" component="div">
-              {phoneNumber}
+    <ThemeProvider theme={theme}>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static" sx={{boxShadow:'none'}}>
+          <Toolbar className='Navbar'>
+            <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+              {Name}
             </Typography>
-            <Typography variant="h6" component="div" sx={{ marginRight: 2 }}>
-              {emailAddress}
-            </Typography>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexGrow: 1,
+                marginX: 2,
+              }}
+            >
+              <Link to="about-me" spy={true} smooth={true} duration={500}>
+                <Typography variant="h5" component="div" sx={{ marginRight: 4 }}>
+                  About Me
+                </Typography>
+              </Link>
+              <Link to="past-jobs" spy={true} smooth={true} duration={500}>
+                <Typography variant="h5" component="div" sx={{ marginRight: 4 }}>
+                  Past Jobs
+                </Typography>
+              </Link>
+              <Link to="past-jobs" spy={true} smooth={true} duration={500}>
+                <Typography variant="h5" component="div" sx={{ marginRight: 4 }}>
+                  Contact Me
+                </Typography>
+              </Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </ThemeProvider>
   );
-}
+};
 
 export default Navbar;
