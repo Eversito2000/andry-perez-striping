@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import img2 from '../img/unnamed.jpg';
+import img2 from '../img/carouselImages/unnamed.jpg';
 
 const ImageCarousel = () => {
     const images = [img2];

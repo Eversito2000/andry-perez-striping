@@ -1,19 +1,40 @@
 import * as React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import { Grid, Typography } from '@mui/material';
 import ImageCarousel from './CarouselPastJobs';
-import { Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Rubik',
+  }
+});
 
 const PastJobs = () => {
-    
     return (
-        <div>
-            <div>
-                <Typography variant="h4" component="div" >
-                    Previous jobs
-                    </Typography>
-                <ImageCarousel />   
-            </div>
-        </div>
+        <ThemeProvider theme={theme}>
+        <Grid container spacing={4}>
+            <Grid item xs={12} sm={6} align='left'>
+                <ImageCarousel />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <Typography variant="h2" component="div" align='left'>
+                    My Work
+                </Typography>
+                <Typography
+              variant="body2"
+              sx={{
+                fontSize: "1.7em",
+                lineHeight: "1.5",
+                color: "#4A4A4A",
+                fontWeight: "500",
+                textAlign: "left",
+              }}
+            >
+                In my role as a Pavement Maintenance Specialist, my work becomes a canvas for my dedication and pride. Every crack sealed and each line meticulously striped reflects my commitment to excellence. I take immense pride in knowing that my efforts contribute to safer and more reliable roads for everyone who travels them.
+                </Typography>
+            </Grid>
+        </Grid>
+        </ThemeProvider>
     );
 };
 

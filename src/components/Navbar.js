@@ -11,7 +11,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Josefin Sans',
+    fontFamily: 'Rubik',
   },
 });
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
                   Past Jobs
                 </Typography>
               </Link>
-              <Link to="past-jobs" spy={true} smooth={true} duration={500}>
+              <Link to="landing-header" spy={true} smooth={true} duration={500}>
                 <Typography variant="h5" component="div" sx={{ marginRight: 4 }}>
                   Contact Me
                 </Typography>
