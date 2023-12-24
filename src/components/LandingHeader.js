@@ -23,18 +23,18 @@ const LandingHeader = () => {
                 color: 'white',
             }}>
                 <Grid container spacing={2} sx={{ justifyContent: 'space-between' }}>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={3}>
                         <Paper sx={{
                             backdropFilter: 'blur(1px)', // add blur effect
                             backgroundColor: 'rgba(255, 255, 255, 0.5)', // semi-transparent white background
                             borderRadius: '10px', // rounded edges
-                            padding: '10px', // add some padding
+                            padding: '5px', // add some padding
                             height: 'auto' // set height to auto to maintain aspect ratio
                         }}>
-                            <Typography variant="h4" sx={{ margin: '1rem', color: 'black', fontFamily: 'Rubik', marginLeft: '50px' }}>Pavement Maintenance Specialist</Typography>
+                            <Typography variant="h4" sx={{ margin: '1rem', color: 'black', fontFamily: 'Rubik' }}>Pavement Maintenance Specialist</Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={3}/>
+                    <Grid item xs={12} sm={3} />
                     <Grid item xs={12} sm={3}>
                         <Box sx={{
                             backdropFilter: 'blur(1px)', // add blur effect
@@ -43,7 +43,8 @@ const LandingHeader = () => {
                             padding: '10px',
                             color: 'black',
                             marginRight: '15px', // add some padding
-                            height: 'auto' // set height to auto to maintain aspect ratio
+                            height: 'auto',
+                            width: '100%' // set height to auto to maintain aspect ratio
                         }}>
                             <Typography variant="h6" gutterBottom>
                                 Contact Me <br></br>For a Free Quote Today!

@@ -13,7 +13,7 @@ import shadows from "@mui/material/styles/shadows";
 const theme = createTheme({
   typography: {
     fontFamily: 'Rubik',
-  },
+  }
 });
 
 const jobs = [
@@ -30,8 +30,8 @@ export default function ApplicableJobs() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={15} justifyContent="center">
         {jobs.map((job, index) => (
-          <Grid key={index} item xs={2} sm={2} md={2}>
-            <Card sx={{  width: '100%', height: '100%', backgroundColor:'transparent', boxShadow:'none' }}>
+          <Grid key={index} item xs={12} sm={12} md={6} lg={4} xl={2}>
+            <Card sx={{  backgroundColor:'transparent', boxShadow:'none' }}>
               <CardMedia
                 component="img"
                 height="140"
@@ -40,7 +40,7 @@ export default function ApplicableJobs() {
                 sx={{ objectFit: "contain" }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography  variant="h5" component="div">
                   {job.title}
                 </Typography>
               </CardContent>

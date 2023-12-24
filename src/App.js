@@ -15,12 +15,14 @@ function App() {
     <div className="App">
       <Navbar />
       <Container maxWidth="false" style={{ marginTop: "10px" }}>
-        <Grid item xs={12}>
-          <Element name="landing-header" id="contact-info">
-            <Paper >
-              <LandingHeader />
+        <Grid container spacing={2}>
+          <Grid item xs={12} style={{ justifyContent: "center", alignItems: "center", backgroundColor: 'transparent' }}>
+            <Paper sx={{paddingRight:'16px', flexGrow:1,  backgroundColor: 'transparent', boxShadow:'none'}}>
+              <Element name="landing-header" id="contact-info">
+                <LandingHeader />
+              </Element>
             </Paper>
-          </Element>
+          </Grid>
         </Grid>
         <Grid container spacing={2}>
           <Grid item xs={12} style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: 'white' }}>
