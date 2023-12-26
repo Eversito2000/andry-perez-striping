@@ -37,7 +37,7 @@ const LandingHeader = () => {
                     <Grid item xs={12} sm={3} />
                     <Grid item xs={12} sm={3}>
                         <Box sx={{
-                            backdropFilter: 'blur(1px)', // add blur effect
+                            backdropFilter: 'blur(30px)', // add blur effect
                             backgroundColor: 'rgba(255, 255, 255, 0.5)', // semi-transparent white background
                             borderRadius: '10px', // rounded edges
                             padding: '10px',
@@ -46,13 +46,13 @@ const LandingHeader = () => {
                             height: 'auto',
                             width: '100%' // set height to auto to maintain aspect ratio
                         }}>
-                            <Typography variant="h6" gutterBottom>
+                            <Typography variant="h4" gutterBottom>
                                 Contact Me <br></br>For a Free Quote Today!
                             </Typography>
-                            <Typography variant="body1">
+                            <Typography variant="h5">
                                 Email: {emailAddress}
                             </Typography>
-                            <Typography variant="body1">
+                            <Typography variant="h5">
                                 Phone: {phoneNumber}
                             </Typography>
                         </Box>

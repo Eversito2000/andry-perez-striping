@@ -28,7 +28,7 @@ export default function ApplicableJobs() {
   return (
     <ThemeProvider theme={theme}>
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={15} justifyContent="center">
+      <Grid container spacing={5} justifyContent="center">
         {jobs.map((job, index) => (
           <Grid key={index} item xs={12} sm={12} md={6} lg={4} xl={2}>
             <Card sx={{  backgroundColor:'transparent', boxShadow:'none' }}>
@@ -40,7 +40,7 @@ export default function ApplicableJobs() {
                 sx={{ objectFit: "contain" }}
               />
               <CardContent>
-                <Typography  variant="h5" component="div">
+                <Typography  variant="h4" component="div">
                   {job.title}
                 </Typography>
               </CardContent>

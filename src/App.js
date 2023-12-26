@@ -31,7 +31,7 @@ function App() {
                 elevation={3}
                 style={{ flexGrow: 1, boxShadow: 'none', margin: 'auto' }}
               >
-                <Typography variant="h3" component="div" sx={{ marginRight: 4, marginBottom: '80px', fontFamily: 'Rubik' }}>
+                <Typography variant="h3" component="div" sx={{ marginRight: 4, marginBottom: '40px', fontFamily: 'Rubik' }}>
                   My Services
                 </Typography>
                 <ApplicableJobs />
