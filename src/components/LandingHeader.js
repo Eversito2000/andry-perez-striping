@@ -1,12 +1,17 @@
 import React from 'react';
-import { Box, Typography, Button, Paper, Grid } from '@mui/material';
+import { Box, Typography, Paper, Grid, Link } from '@mui/material';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 
-let theme = createTheme();
+let theme = createTheme({
+    typography: {
+        fontFamily: 'Rubik',
+    },
+});
 theme = responsiveFontSizes(theme);
 const LandingHeader = () => {
-    const emailAddress = 'aaastripingda@gmail.com'
+    const emailAddress = 'aaastriping30@gmail.com'
     const phoneNumber = '(305)-905-6654'
+    const altNumber = '(786)-838-1657'
     const bgImage = require('../img/bgImage.jpg'); // import the image using require
 
     return (
@@ -23,37 +28,46 @@ const LandingHeader = () => {
                 color: 'white',
             }}>
                 <Grid container spacing={2} sx={{ justifyContent: 'space-between' }}>
-                    <Grid item xs={12} sm={3}>
+                    <Grid item xs={12} sm={6} md={6} lg={5} xl={4}>
                         <Paper sx={{
-                            backdropFilter: 'blur(1px)', // add blur effect
-                            backgroundColor: 'rgba(255, 255, 255, 0.5)', // semi-transparent white background
-                            borderRadius: '10px', // rounded edges
-                            padding: '5px', // add some padding
-                            height: 'auto' // set height to auto to maintain aspect ratio
+                            backdropFilter: 'blur(2px)',
+                            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                            borderRadius: '10px',
+                            padding: '5px',
+                            height: 'auto'
                         }}>
                             <Typography variant="h4" sx={{ margin: '1rem', color: 'black', fontFamily: 'Rubik' }}>Pavement Maintenance Specialist</Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={3} />
-                    <Grid item xs={12} sm={3}>
-                        <Box sx={{
-                            backdropFilter: 'blur(30px)', // add blur effect
-                            backgroundColor: 'rgba(255, 255, 255, 0.5)', // semi-transparent white background
-                            borderRadius: '10px', // rounded edges
-                            padding: '10px',
-                            color: 'black',
-                            marginRight: '15px', // add some padding
-                            height: 'auto',
-                            width: '100%' // set height to auto to maintain aspect ratio
-                        }}>
-                            <Typography variant="h4" gutterBottom>
-                                Contact Me <br></br>For a Free Quote Today!
+                    <Grid item xs={12} sm={6} md={6} lg={5} xl={2}>
+                        <Box
+                            sx={{
+                                backdropFilter: 'blur(8px)', // Adjust blur intensity
+                                backgroundColor: 'rgba(255, 255, 255, 0.85)', // Adjust background opacity and color
+                                borderRadius: '12px', // Rounded corners
+                                padding: '20px', // Padding around content
+                                color: 'rgba(0, 0, 0, 0.85)', // Text color
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Box shadow for depth
+                                textAlign: 'center'
+                            }}
+                        >
+                            <Typography variant="h5" fontWeight={700} mb={2}>
+                                Contact Me
                             </Typography>
-                            <Typography variant="h5">
-                                Email: {emailAddress}
+                            <Typography variant="h6" mb={1}>
+                                <Link href={`mailto:${emailAddress}`} underline="none" color="inherit">
+                                    Email: {emailAddress}
+                                </Link>
                             </Typography>
-                            <Typography variant="h5">
-                                Phone: {phoneNumber}
+                            <Typography variant="h6" mb={1}>
+                                <Link href={`tel:${phoneNumber}`} underline="none" color="inherit">
+                                    Home Phone: {phoneNumber}
+                                </Link>
+                            </Typography>
+                            <Typography variant="h6">
+                                <Link href={`tel:${altNumber}`} underline="none" color="inherit">
+                                    Alt Phone: {altNumber}
+                                </Link>
                             </Typography>
                         </Box>
                     </Grid>

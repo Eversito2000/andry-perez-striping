@@ -8,7 +8,6 @@ import {
   Typography,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import shadows from "@mui/material/styles/shadows";
 
 const theme = createTheme({
   typography: {
@@ -34,13 +33,13 @@ export default function ApplicableJobs() {
             <Card sx={{  backgroundColor:'transparent', boxShadow:'none' }}>
               <CardMedia
                 component="img"
-                height="140"
+                height="100"
                 src={job.image}
                 alt={job.title}
                 sx={{ objectFit: "contain" }}
               />
               <CardContent>
-                <Typography  variant="h4" component="div">
+                <Typography  variant="h5" component="div">
                   {job.title}
                 </Typography>
               </CardContent>
