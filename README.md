@@ -1,7 +1,7 @@
 # Andry Perez
 A resume website to showcase the scope of Andry's work and potential
 
-#Branches
+## Branches
 **master** is the production branch
 **develop** is the development branch
 
