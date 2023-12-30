@@ -2,7 +2,7 @@
 A resume website to showcase the scope of Andry's work and potential
 
 ## Branches
-**master** is the production branch
+**master** is the production branch \
 **develop** is the development branch
 
 ## Available Scripts
