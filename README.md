@@ -1,6 +1,8 @@
 # Andry Perez
 An online portfolio dedicated to showcasing the breadth of Andry's professional accomplishments and future potential, encapsulating his diverse body of work.
 
+This project sparked my interest in ReactJS, specifically focusing on the frontend. The primary objective was to deepen my understanding of ReactJS and incorporate packages such as MUI, react-image-gallery, and others.
+
 ## Branches
 **master** is the production branch \
 **develop** is the development branch
@@ -31,7 +33,4 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Stack
-Built using ReactJs with MUI
 
