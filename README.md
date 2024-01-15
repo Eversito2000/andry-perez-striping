@@ -1,4 +1,4 @@
-# Andry Perez
+# Andry Perez Striping
 An online portfolio dedicated to showcasing the breadth of Andry's professional accomplishments and future potential, encapsulating his diverse body of work.
 
 This project sparked my interest in ReactJS, specifically focusing on the frontend. The primary objective was to deepen my understanding of ReactJS and incorporate packages such as MUI, react-image-gallery, and others.
