@@ -1,5 +1,5 @@
 # Andry Perez
-A resume website to showcase the scope of Andry's work and potential
+An online portfolio dedicated to showcasing the breadth of Andry's professional accomplishments and future potential, encapsulating his diverse body of work.
 
 ## Branches
 **master** is the production branch \
