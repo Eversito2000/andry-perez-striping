@@ -10,8 +10,15 @@ import Paper from "@mui/material/Paper";
 import { Element } from 'react-scroll'
 import LandingHeader from "./components/LandingHeader";
 import { Typography } from "@mui/material";
+import {useEffect} from "react";
 
 function App() {
+  useEffect(() => {
+    if (window !== window.top) {
+      window.top.location.href = window.location.href;
+    }
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
